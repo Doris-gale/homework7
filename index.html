@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            margin:0px;
+            padding:0px;
+	    }
+        .container{
+            width:1200px;
+            height:60px;
+            margin:auto;
+        }
+        .container>div:nth-child(1){
+            background:red;
+            height:40px;
+            width:300px;
+            line-height:40px;
+            text-align:center;
+            color:white;
+        }
+        .container>div:nth-child(2){
+            background:blue;
+            height:40px;
+            width:300px;
+            line-height:40px;
+            text-align:center;
+            color:white;
+        }
+        .container>div:nth-child(3){
+            background:black;
+            height:40px;
+            width:300px;
+            line-height:40px;
+            text-align:center;
+            color:white;
+        }
+        .container>div:nth-child(4){
+            background:orange;
+            height:40px;
+            width:300px;
+            line-height:40px;
+            text-align:center;
+            color:white;
+        }
+        @media screen and (min-width:1200px){
+            .container{
+                width:500px; 
+                margin:0 auto;
+                height:60px;
+                display:flex;
+                justify-content: center;
+                text-align:center;
+            }
+        }
+        @media screen and (min-width:992px) and (max-width:1200px){
+            .container{
+                justify-content: center;
+            }
+            .container>div:nth-child(1){
+                background:red;
+                height:60px;
+                width:1200px;
+            }
+            .container>div:nth-child(2){
+                background:blue;
+                height:60px;
+                width:400px;
+            }
+            .container>div:nth-child(3){
+                background:black;
+                height:60px;
+                width:400px;
+                margin-right:400px;
+                margin-top:-60px;
+                float:right;
+            }
+            .container>div:nth-child(4){
+                background:orange;
+                height:60px;
+                width:400px;
+                margin-right:0px;
+                margin-top:-60px;
+                float:right;
+            }
+        }
+        @media screen and (min-width:768px) and (max-width:992px){
+            .container>div:nth-child(1){
+                background:red;
+                height:60px;
+                width:200px;
+            }
+            .container>div:nth-child(2){
+                background:blue;
+                height:60px;
+                width:200px;
+                margin-right:800px;
+                margin-top:-60px;
+                float:right;
+            }
+            .container>div:nth-child(3){
+                background:black;
+                height:60px;
+                width:200px;
+                float:left;
+            }
+            .container>div:nth-child(4){
+                background:orange;
+                height:60px;
+                width:200px;
+                float:left;
+            }
+        }
+        @media screen and (max-width:768px){
+            .container>div:nth-child(1){
+                background:red;
+                height:60px;
+                width:768px;
+                align-items: center;
+            }
+            .container>div:nth-child(2){
+                background:blue;
+                height:60px;
+                width:768px;
+                align-items: center;
+            }
+            .container>div:nth-child(3){
+                background:black;
+                height:60px;
+                width:768px;
+                align-items: center;
+            }
+            .container>div:nth-child(4){
+                background:orange;
+                height:60px;
+                width:768px;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bg">1</div>
+        <div class="bg">2</div>
+        <div class="bg">3</div>
+        <div class="bg">4</div>
+    </div>
+</body>
+</html>
